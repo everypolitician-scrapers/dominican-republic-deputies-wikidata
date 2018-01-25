@@ -6,7 +6,7 @@ existing = EveryPolitician::Index.new.country("Dominican-Republic").legislature(
 
 en_2016 = EveryPolitician::Wikidata.wikipedia_xpath(
   url: 'https://en.wikipedia.org/wiki/Chamber_of_Deputies_(Dominican_Republic)',
-  after: '//h2/span[@id="Current_composition_.282016-_.29"]',
+  after: '//h2/span[@id="Current_composition_(2016-present)"]',
   before: '//h2/span[@id="Party_strengths_in_the_Chamber_of_Deputies"]',
   xpath: '//table//tr//td[1]//a[not(@class="new")]/@title',
 )
